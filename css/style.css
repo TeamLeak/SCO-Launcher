@@ -1,0 +1,25 @@
+.button1 {
+    -fx-background-color: #ffffff;
+}
+.button2 {
+    -fx-background-color: linear-gradient(to bottom left, #f78361, #f54b64);
+}
+.button3 {
+    -fx-background-color: #725a7a;    
+}
+
+.progress-bar {
+    -fx-pref-height: 40px;
+}
+
+.progress-bar .track {
+    -fx-background-radius: 0;
+}
+
+.progress-bar .bar {
+    -fx-background-color: linear-gradient(to left, aquamarine, royalblue)
+}
+
+.text-area .scroll-pane .content {
+    -fx-background-color: #4F5770;
+}
