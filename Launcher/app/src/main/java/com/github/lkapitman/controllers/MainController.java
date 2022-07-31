@@ -57,6 +57,8 @@ public class MainController implements Initializable {
 
     public void setStage(Stage stage) {
         this.stage = stage;
+        trailer.getEngine().load("https://teamleak.github.io/SCO-Launcher-news/trailer.mp4");
+        news.getEngine().load("https://teamleak.github.io/SCO-Launcher-news/index.html");
     }
 
     @FXML
