@@ -3,15 +3,20 @@ package com.github.lkapitman.controllers;
 import com.jfoenix.controls.JFXButton;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
+import javafx.fxml.FXMLLoader;
 import javafx.fxml.Initializable;
+import javafx.scene.Parent;
+import javafx.scene.Scene;
 import javafx.scene.control.Label;
 import javafx.scene.control.ProgressBar;
 import javafx.scene.control.TextArea;
 import javafx.scene.image.ImageView;
 import javafx.scene.input.MouseEvent;
 import javafx.scene.layout.AnchorPane;
+import javafx.scene.paint.Color;
 import javafx.scene.web.WebView;
 import javafx.stage.Stage;
+import lombok.SneakyThrows;
 
 import java.net.URL;
 import java.util.ResourceBundle;
@@ -66,8 +71,19 @@ public class MainController implements Initializable {
         //TODO
     }
 
+    @SneakyThrows
     public void openSettings(MouseEvent mouseEvent) {
-        //TODO
+        FXMLLoader loader = new FXMLLoader(getClass().getResource("/fxml/settings.fxml"));
+        Parent root = loader.load();
+        SettingsController controller = loader.getController();
+        Scene scene = new Scene(root);
+
+        scene.setFill(Color.TRANSPARENT);
+
+        stage.setScene(scene);
+
+        controller.setStage(stage);
+        stage.show();
     }
 
     public void openFolder(MouseEvent mouseEvent) {
@@ -86,4 +102,7 @@ public class MainController implements Initializable {
         System.exit(0);
     }
 
+    public void onlineClicked(MouseEvent mouseEvent) {
+        //Nothing
+    }
 }

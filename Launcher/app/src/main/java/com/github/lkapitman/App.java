@@ -1,6 +1,6 @@
 package com.github.lkapitman;
 
-import com.github.lkapitman.controllers.Controller;
+import com.github.lkapitman.controllers.StartupController;
 import javafx.application.Application;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Parent;
@@ -14,9 +14,9 @@ public class App extends Application {
     @SneakyThrows
     @Override
     public void start(Stage stage) {
-        FXMLLoader loader = new FXMLLoader(getClass().getResource("/fxml/login.fxml"));
+        FXMLLoader loader = new FXMLLoader(getClass().getResource("/fxml/startup.fxml"));
         Parent root = loader.load();
-        Controller controller = loader.getController();
+        StartupController controller = loader.getController();
         Scene scene = new Scene(root);
 
         scene.setFill(Color.TRANSPARENT);
