@@ -10,7 +10,7 @@
 <?import javafx.scene.text.Font?>
 <?import javafx.scene.web.WebView?>
 
-<AnchorPane fx:id="main" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="563.0" prefWidth="795.0" style="-fx-background-color: #4F5770;" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.github.lkapitman.controllers.MainController">
+<AnchorPane fx:id="main" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="563.0" prefWidth="795.0" style="-fx-background-color: #4F5770;" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.github.lkapitman.ui.app.controllers.MainController">
    <children>
       <AnchorPane fx:id="top" prefHeight="45.0" prefWidth="795.0" styleClass="button2" stylesheets="@../css/style.css">
          <children>
