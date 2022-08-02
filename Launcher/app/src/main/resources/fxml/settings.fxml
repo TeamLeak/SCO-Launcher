@@ -11,7 +11,7 @@
 <?import javafx.scene.text.Font?>
 
 <?import com.jfoenix.controls.JFXTextField?>
-<AnchorPane fx:id="mainPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="434.0" prefWidth="281.0" styleClass="colorBackground" stylesheets="https://raw.githubusercontent.com/TeamLeak/SCO-Launcher/master/Launcher/app/src/main/resources/css/style.css" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.github.lkapitman.controllers.SettingsController">
+<AnchorPane fx:id="mainPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="434.0" prefWidth="281.0" styleClass="colorBackground" stylesheets="https://raw.githubusercontent.com/TeamLeak/SCO-Launcher/master/Launcher/app/src/main/resources/css/style.css" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.github.lkapitman.ui.app.controllers.SettingsController">
    <children>
       <AnchorPane fx:id="headerPane" prefHeight="43.0" prefWidth="281.0" styleClass="button3" stylesheets="https://raw.githubusercontent.com/TeamLeak/SCO-Launcher/master/Launcher/app/src/main/resources/css/style.css">
          <children>
