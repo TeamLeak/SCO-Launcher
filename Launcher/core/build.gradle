@@ -1,0 +1,15 @@
+plugins {
+    id "org.openjfx.javafxplugin" version "0.0.9"
+}
+
+javafx {
+    modules = ['javafx.controls']
+}
+
+dependencies {
+    implementation project(':appUI')
+    implementation project(':fileManager')
+    implementation 'org.junit.jupiter:junit-jupiter:5.4.2'
+    testImplementation group: 'org.mockito', name: 'mockito-core', version: '2.1.0'
+
+}
