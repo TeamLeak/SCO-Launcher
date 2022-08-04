@@ -7,6 +7,7 @@ import com.jfoenix.controls.JFXSlider;
 import com.jfoenix.controls.JFXTextField;
 import javafx.scene.Scene;
 import javafx.scene.control.Label;
+import javafx.scene.control.Separator;
 import javafx.scene.image.Image;
 import javafx.scene.image.ImageView;
 import javafx.scene.layout.AnchorPane;
@@ -128,15 +129,75 @@ public class SettingsPanel extends Panel {
         argumentsField.setTranslateX(116);
         arguments.setTranslateY(134);
 
+        Separator separator = new Separator();
+        separator.setTranslateX(-1);
+        separator.setTranslateY(192);
+        separator.setPrefSize(282, 6);
+        separator.setStyle("-fx-background-color: #725a7a;");
 
+        Label helpfulURL = new Label("Полезные ссылки:");
+        helpfulURL.setTranslateY(208);
+        helpfulURL.setTranslateX(79);
+        helpfulURL.setFont(new Font("Consolas Italic", 14));
 
+        Label discord = new Label("DISCORD: ");
+        discord.setTranslateX(9);
+        discord.setTranslateY(336);
+        discord.setPrefSize(66, 26);
+        discord.setFont(new Font("Consolas Italic", 13));
+
+        Label error = new Label("Возникла ошибка?");
+        error.setTranslateY(303);
+        error.setTranslateX(78);
+        error.setFont(new Font("Consolas Italic", 14));
+
+        Label paramJVM = new Label("Параметры JVM:");
+        paramJVM.setTranslateX(8);
+        paramJVM.setTranslateY(235);
+
+        Label optimizeMinecraft = new Label("Оптимизация Minecraft: ");
+        optimizeMinecraft.setTranslateX(8);
+        optimizeMinecraft.setTranslateY(275);
+
+        JFXButton open1 = new JFXButton();
+        open1.setTranslateX(202);
+        open1.setTranslateY(230);
+        open1.setText("Открыть");
+        open1.setPrefSize(66, 26);
+        open1.setStyle("-fx-background-color: #ffffff;");
+        open1.setOnMouseClicked(e -> {
+            //TODO открыть discord.
+        });
+
+        JFXButton open2 = new JFXButton();
+        open2.setTranslateX(202);
+        open2.setTranslateY(270);
+        open2.setText("Открыть");
+        open2.setPrefSize(66, 26);
+        open2.setStyle("-fx-background-color: #ffffff;");
+        open2.setOnMouseClicked(e -> {
+            //TODO открыть lolipop.
+        });
+
+        JFXButton open3 = new JFXButton();
+        open3.setTranslateX(73);
+        open3.setTranslateY(336);
+        open3.setText("Открыть");
+        open3.setPrefSize(123, 26);
+        open3.setStyle("-fx-background-color: #ffffff;");
+        open3.setOnMouseClicked(e -> {
+            //TODO открыть JVM настройки.
+        });
+        
         header.getChildren().addAll(title, close, closeButton);
         main.getChildren().addAll(header,
                 saveButton, loadButton,
                 omSlider, selectOM, givedOM,
                 resizeScreen, height, width, xResize,
-                arguments, argumentsField
-                );
+                arguments, argumentsField, separator,
+                helpfulURL, discord, error, paramJVM, optimizeMinecraft,
+                open1, open2, open3
+        );
         Scene scene = new Scene(main);
         scene.setFill(Color.TRANSPARENT);
         stage.setScene(scene);
